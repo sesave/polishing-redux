@@ -7,7 +7,7 @@ const initialState = {
 }
 
 export const userSlice = createSlice({
-    name: userSlice, initialState, reducers: {
+    name: 'userSlice', initialState, reducers: {
         addUser: (state, action) => {
             const { name, username, email } = action.payload
             state.name = name
